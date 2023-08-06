@@ -1,0 +1,7 @@
+body{
+    background-color: $bgColor;
+}
+
+h1{
+    color: $myColor;
+}
