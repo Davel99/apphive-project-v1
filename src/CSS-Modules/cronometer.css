@@ -1,0 +1,19 @@
+#crono-space{
+    font-size: 100px;
+    letter-spacing: 10px;
+    vertical-align: bottom;
+}
+
+#crono-ms{
+    font-size: 60px;
+    
+}
+
+#crono-m, #crono-s, #crono-ms{
+    font-family: monospace, 'Roboto';
+}
+
+
+.number-app{
+    font-size: 50px;
+}
