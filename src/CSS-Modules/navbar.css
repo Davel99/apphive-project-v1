@@ -1,0 +1,12 @@
+.navbar-brand{
+    margin-right: 60px;
+}
+
+.navbar-text{
+    margin-right: 30px;
+}
+
+.footer-list > li{
+    font-size: smaller;
+    background-color: transparent !important;
+}

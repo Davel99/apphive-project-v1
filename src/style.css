@@ -2,4 +2,6 @@
 @import './CSS-Modules/__colors.css';
 @import './CSS-Modules/__global.css';
 
-@import './CSS-Modules/cronometer.css'
+@import './CSS-Modules/navbar.css';
+
+@import './CSS-Modules/cronometer.css';
