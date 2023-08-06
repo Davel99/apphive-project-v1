@@ -35,3 +35,8 @@ main{
 .text-justify{
     text-align: justify;
 }
+
+.text-sm-10{
+    font-size: 10px;
+}
+
