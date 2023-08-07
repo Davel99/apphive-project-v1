@@ -45,19 +45,14 @@ export default class Crono {
         this.isRunning = !this.isRunning;
 
         if (this.isRunning) {
-            
             if (this.lastDate) {
                 let difference = Date.now() - this.pauseDate;
-                // console.log('Last Date: '+ new Date(this.lastDate));
-                // console.log('start Date: '+ new Date(this.startDate));
-                // console.log('Dif = ' + (difference/1000));
                 this.startDate = this.lastDate + difference;
-                // console.log(new Date(this.startDate));
             } else {
                 this.startDate = Date.now();
-
             }
-            this.chronometer_id = setInterval(() => this.chronometerV2(), 30);
+            this.chronometer_id = setInterval(() => this.chronometer(), 30);
+            this.btns.start.innerHTML = "PAUSE";
         } else {
             clearInterval(this.chronometer_id);
             this.lastMs = this.ms;
@@ -66,6 +61,8 @@ export default class Crono {
 
             this.pauseDate = Date.now();
             this.lastDate = this.startDate;
+
+            this.btns.start.innerHTML = "START";
         }
     }
 
@@ -77,7 +74,7 @@ export default class Crono {
         this.startDate = null;
     }
 
-    chronometerV2() {
+    chronometer() {
         let currentTime = Date.now() - this.startDate;
 
         this.ms = (currentTime % this.baseMs);
@@ -91,25 +88,6 @@ export default class Crono {
         this.segPrinter();
 
         return true;
-
-    }
-
-
-    chronometer() {
-        let currentTime = new Date() - this.startDate;
-
-        this.ms = (currentTime % this.baseMs) + this.lastMs;
-        this.msPrinter();
-        this.seg = Math.floor(currentTime / this.baseMs) + this.lastSeg;
-        if (this.seg >= 60) {
-            this.min = Math.floor(currentTime / this.baseMin) + this.lastMin;
-            this.minPrinter();
-            this.seg -= 60;
-        }
-        this.segPrinter();
-
-        return true;
-
     }
 
     async msPrinter() {
