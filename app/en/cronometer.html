@@ -30,23 +30,54 @@
     </header>
 
     <main>
-        <div class="container py-5">
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <div class="card-header">
+        <div class="app-container container my-5">
+            <div class="app-container__header text-center">
+                <h1>Cronometer</h1>
+                <p>Use your online cronometer</p>
+            </div>
+            <div class="app-container__content container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="table table-sm text-center">
+                            <thead>
+                                <tr>
+                                    <th>MIN</th>
+                                    <th></th>
+                                    <th>SEC</th>
+                                    <th></th>
+                                    <th>MS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-light" id="crono-space">
+                                    <td id="crono-m">
+                                        00
+                                    </td>
+                                    <td>:</td>
+                                    <td id="crono-s">
+                                        00
+                                    </td>
+                                    <td>:</td>
+                                    <td id="crono-ms">
+                                        00
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cronometer</h5>
-                        <i class="" aria-hidden="true"></i>
-            
-                        <a href="/app/en/cronometer.html" title="Go to app" class="app-btn btn btn-outline-success w-100">
-                            <i class="fa fa-play" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Online cronometer
+
+                    <div class="col-md-6 px-5 pt-5">
+                        <div class="row pb-3">
+                            <button id="crono-start" class="btn btn-warning">START</button>
+                        </div>
+                        <div class="row">
+                            <button id="crono-stop" class="btn btn-danger">STOP</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
