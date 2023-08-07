@@ -130,13 +130,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/JS-Modules/wordCounter.js":
+/*!***************************************!*\
+  !*** ./src/JS-Modules/wordCounter.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ WordCounter)\n/* harmony export */ });\nclass WordCounter{\r\n    constructor(){\r\n        this.domLoader();\r\n        this.events();        \r\n    }\r\n\r\n    events(){\r\n        this.contador.addEventListener('input', () => {\r\n            let value = this.contador.value.trim();\r\n            this.__chars = value.length;\r\n            this.__words = value.split(' ').length;\r\n\r\n            this.word_counter.innerHTML = this.__words;\r\n            this.char_counter.innerHTML = this.__chars;\r\n\r\n        });\r\n    }\r\n\r\n    domLoader(){\r\n        this.contador = document.querySelector('#wordCounter-app');\r\n        this.word_counter = document.querySelector('#num-palabras');\r\n        this.char_counter = document.querySelector('#num-caracteres');\r\n    }\r\n}\n\n//# sourceURL=webpack://webpack-simple-config/./src/JS-Modules/wordCounter.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _JS_Modules_cronometer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./JS-Modules/cronometer.js */ \"./src/JS-Modules/cronometer.js\");\n\r\n\r\n\r\n\r\nif(document.querySelector('#crono-space')){\r\n    new _JS_Modules_cronometer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n}\n\n//# sourceURL=webpack://webpack-simple-config/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _JS_Modules_cronometer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./JS-Modules/cronometer.js */ \"./src/JS-Modules/cronometer.js\");\n/* harmony import */ var _JS_Modules_wordCounter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./JS-Modules/wordCounter */ \"./src/JS-Modules/wordCounter.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nif(document.querySelector('#crono-space')){\r\n    new _JS_Modules_cronometer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n}\r\n\r\nif(document.querySelector('#wordCounter-app')){\r\n    new _JS_Modules_wordCounter__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\r\n}\n\n//# sourceURL=webpack://webpack-simple-config/./src/index.js?");
 
 /***/ }),
 
