@@ -16,6 +16,8 @@ header{
 
 footer{
     min-height: 10vh;
+    background-color: $bgColor;
+    border: 1px solid black;
 }
 
 main{
