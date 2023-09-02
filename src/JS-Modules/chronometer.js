@@ -71,6 +71,7 @@ export default class Crono {
         this.resetAll();
         clearInterval(this.chronometer_id);
         this.chronometer_id = null;
+        this.lastDate = null;
         this.startDate = null;
     }
 
