@@ -1,11 +1,11 @@
 import './style.css';
 
-import Crono from './JS-Modules/cronometer.js';
+import Chrono from './JS-Modules/chronometer.js';
 import WordCounter from './JS-Modules/wordCounter';
 
 
 if(document.querySelector('#crono-space')){
-    new Crono();
+    new Chrono();
 }
 
 if(document.querySelector('#wordCounter-app')){
