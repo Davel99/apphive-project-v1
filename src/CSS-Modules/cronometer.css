@@ -1,19 +1,32 @@
+#crono-m, #crono-s, #crono-ms{
+    font-family: monospace, 'Roboto';
+}
+
 #crono-space{
     font-size: 100px;
     letter-spacing: 10px;
     vertical-align: bottom;
 }
-
 #crono-ms{
-    font-size: 60px;
-    
+    font-size: 60px;    
 }
-
-#crono-m, #crono-s, #crono-ms{
-    font-family: monospace, 'Roboto';
-}
-
 
 .number-app{
     font-size: 50px;
+}
+
+@media (min-width: $screen_extra-small) and (max-width: $screen_medium){
+    #crono-space{
+        font-size: 40px;
+        letter-spacing: 10px;
+        vertical-align: bottom;
+    }    
+    #crono-ms{
+        font-size: 20px;        
+    }        
+    .number-app{
+        font-size: 25px;
+    }
+
+
 }

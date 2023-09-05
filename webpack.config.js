@@ -35,7 +35,7 @@ module.exports = (env, argv) => {
     if(argv.mode === 'development'){
         config.module.rules[0].use = ['style-loader', 'css-loader', postcssLoading];
         config.watch = true;
-        config.output.path = path.resolve(__dirname,'build');
+        config.output.path = path.resolve(__dirname,'app/dist');
     } else if (argv.mode === 'production'){
         config.module.rules[0].use = [MiniCssExtractPlugin.loader, 'css-loader', postcssLoading];
         config.plugins = [new MiniCssExtractPlugin({filename: 'main.css'})];
