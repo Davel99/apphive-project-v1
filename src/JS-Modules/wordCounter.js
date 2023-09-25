@@ -18,7 +18,7 @@ export default class WordCounter{
 
     domLoader(){
         this.contador = document.querySelector('#wordCounter-app');
-        this.word_counter = document.querySelector('#num-palabras');
-        this.char_counter = document.querySelector('#num-caracteres');
+        this.word_counter = document.querySelector('#wordCount');
+        this.char_counter = document.querySelector('#charCount');
     }
 }

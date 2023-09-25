@@ -2,8 +2,7 @@
 @import './CSS-Modules/vars.css';
 @import './CSS-Modules/__colors.css';
 @import './CSS-Modules/__global.css';
+@import './CSS-Modules/app.css';
+@import './CSS-Modules/header.css';
 
-@import './CSS-Modules/navbar.css';
-
-@import './CSS-Modules/cronometer.css';
 @import './CSS-Modules/wordCounter.css';
