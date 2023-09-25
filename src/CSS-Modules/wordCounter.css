@@ -1,6 +1,14 @@
+$textBg: #c7c7c7;
+$numberSize: 50px;
+
 #wordCounter-app{
     min-height: 300px;
     min-width: 100%;
     max-width: 500px;
     padding: 5px;
+    background: $textBg;
+}
+
+.number-app{
+    font-size: $numberSize;
 }

@@ -1,50 +1,39 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: $bgColor;
+$mainMinH: 80vh;
+$headerMinH: 5vh;
+$footerMinH: 15vh;
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
-header{
-    min-height: 5vh;
+header {
+    min-height: $headerMinH;
 }
 
-
-footer{
-    min-height: 10vh;
-    background-color: $bgColor;
-    border: 1px solid grey;
-    color: grey;
+main {
+    min-height: $mainMinH;
 }
 
-main{
-    min-height: 80vh;
+footer {
+    min-height: $footerMinH;
 }
 
-.footer-list > li{
-    font-size: smaller;
-    background-color: transparent !important;
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
 }
 
-.footer-list > li > a{
-    text-decoration: none;
-    color:white;
-}
-
-.text-justify{
-    text-align: justify;
-}
-
-.text-sm{
-    font-size: 12.5px;
-}
-
-.app-icon-card{
+.app-icon-card {
     font-size: 125px;
     margin: 25px;
 }
-

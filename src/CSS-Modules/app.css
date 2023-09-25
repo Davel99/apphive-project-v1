@@ -1,0 +1,28 @@
+$iconMedSize: 60px;
+$iconBigSize: 100px;
+$iconMedDistance: 30px;
+
+$appFontFamily: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$appFontFamily_text: 'Arial Narrow Bold', sans-serif;
+$brandFSize: 2.5rem;
+
+.app-icon-card{
+    font-size: $iconMedSize;
+    padding-top: $iconMedDistance;
+    padding-bottom: $iconMedDistance;
+}
+
+.app_ff{
+    font-family: $appFontFamily;
+}
+
+.app_ff-text{
+    font-family: $appFontFamily_text;
+}
+
+.toolhive-brand{
+    font-family: $appFontFamily;
+    font-size: $brandFSize;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+}

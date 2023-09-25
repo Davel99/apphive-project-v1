@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SM65WFBZS"></script>
@@ -9,7 +10,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-7SM65WFBZS');
-    </script> 
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico.png">
     <meta name="description"
         content="ToolHive: Explore a wide variety of tools to enhance your work and entertainment.">
-    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="./dist/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,7 +28,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">ToolHive</a>
+                <a class="navbar-brand toolhive-brand" href="/">ToolHive</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
                     </ul>
-                    <span class="navbar-text">
+                    <span class="navbar-text toolhive-navbar-text">
                         Your apps website
                     </span>
                 </div>
@@ -43,48 +44,26 @@
         </nav>
     </header>
 
-    <main>
-        <div class="contianer mt-5 mb-3 text-center">
-            <h1>Online tools</h1>
-            <p> <strong>ToolHive</strong> is a growing website that stores useful online tools. Here is our list: </p>
+    <main class="bg-dark text-light">
+        <div class="container pt-5 pb-3 text-center">
+            <h1>Online tools for you</h1>
         </div>
-        <div class="container py-5">
+        <div class="container py-3">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-lg-3 my-3">
-                    <div class="card text-center border-dark">
-                        <div class="card-header">
+                <div class="col-md-6 col-sm-12 col-lg-3 my-3">
+                    <div class="card text-center border-secondary bg-secondary text-light">
+                        <div class="card-header bg-dark">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title col-12">Chronometer</h5>
-                            <i class="app-icon-card fa-solid fa-stopwatch" aria-hidden="true"></i>
-
-                            <a href="en/chronometer.html" title="Go to app"
-                                class="app-btn btn btn-outline-success w-100">
-                                <i class="fa fa-play" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="card-footer text-muted text-sm">
-                            Online chronometer
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4 col-lg-3 my-3">
-                    <div class="card text-center border-dark">
-                        <div class="card-header">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Word Counter</h5>
-
+                            <h5 class="card-title col-12 h1">Word Counter</h5>
                             <i class="app-icon-card fa-solid fa-file-word" aria-hidden="true"></i>
 
-                            <a href="en/word-counter.html" title="Go to app"
-                                class="app-btn btn btn-outline-success w-100">
+                            <a href="word-counter.html" title="Go to app" class="app-btn btn btn-primary w-100">
                                 <i class="fa fa-play" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <div class="card-footer text-muted text-sm">
-                            Online word counter for writters
+                        <div class="card-footer text-light text-sm bg-dark">
+                            Online word counter
                         </div>
                     </div>
                 </div>
@@ -93,29 +72,30 @@
         </div>
     </main>
 
-    <footer>
-        <div class="row text-dark m-0">
+    <footer class="bg-dark border-top border-secondary">
+        <div class="row text-light m-0">
             <div class="col-md-4">
                 <div class="row mt-5 mb-5">
                     <div class="col-md-12 d-flex align-items-center justify-content-center">
-                        <h1>ToolHive</h1>
+                        <h1 class="toolhive-brand">ToolHive</h1>
                     </div>
                     <div class="col-md-12 d-flex align-items-center justify-content-center ">
-                        <span class="border-top border-ligth text-ligth text-sm">Your apps website</span>
+                        <span class="border-top border-secondary text-ligth text-sm">Thanks for your visit. We are
+                            growing up for you</span>
                     </div>
                 </div>
 
             </div>
             <div class="col-md-8 p-3 text-center mt-3">
-                <span class="text-sm-10">Version 0.0.1</span>
+                <span class="text-sm-10">Version 0.0.2</span>
                 <p class="text-sm">
-                    ToolHive is a growing website that aims to store simple applications for Internet users.
+                    Thanks for your patience
                 </p>
             </div>
         </div>
 
     </footer>
-    <script src="dist/main.js"></script>
+    <script src="./dist/main.js"></script>
 </body>
 
 </html>
